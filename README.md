@@ -1,14 +1,36 @@
-<p align="center">
-    <a href="https://laravel.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+<table>
+<tr>
+<td align="center">
+    <a href="https://laravel.com">
+        <img
+            src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg"
+            width="280"
+            alt="Laravel"
+        >
     </a>
-</p>
+</td>
 
-<p align="center">
-    <a href="https://tailwindcss.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg" width="300" alt="Tailwind CSS Logo">
+<td align="center">
+    <a href="https://tailwindcss.com">
+        <img
+            src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg"
+            width="220"
+            alt="Tailwind CSS"
+        >
     </a>
-</p>
+</td>
+
+<td align="center">
+    <a href="https://www.mysql.com">
+        <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+            width="180"
+            alt="MySQL"
+        >
+    </a>
+</td>
+</tr>
+</table>
 
 # E-Commerce System
 

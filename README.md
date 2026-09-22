@@ -12,7 +12,12 @@
 
 # E-Commerce System
 
-A full-stack e-commerce management system built with Laravel and Tailwind CSS.
+A full-stack e-commerce management system built with **Laravel 13**, **Blade**, **Tailwind CSS**, and **MySQL**.
+
+The system provides two main interfaces:
+
+* **Admin Panel** — Manage products, inventory, purchases, orders, customers, users, and other business operations.
+* **Client Website** — Allow customers to browse products, manage their cart, place orders, and track their purchases.
 
 ## Tech Stack
 
@@ -29,7 +34,8 @@ A full-stack e-commerce management system built with Laravel and Tailwind CSS.
 ### Admin Panel
 
 * Dashboard
-* User and role management
+* User management
+* Role management
 * Category management
 * Product management
 * Product image management
@@ -53,36 +59,108 @@ A full-stack e-commerce management system built with Laravel and Tailwind CSS.
 * Order history
 * Order tracking
 
+## Requirements
+
+Before installing the project, make sure you have:
+
+* PHP 8.4+
+* Composer
+* Node.js
+* npm
+* MySQL
+
 ## Installation
+
+Clone the repository:
 
 ```bash
 git clone <repository-url>
 
 cd ecommerce
+```
 
+Install PHP dependencies:
+
+```bash
 composer install
+```
 
+Install frontend dependencies:
+
+```bash
 npm install
+```
 
+Create the environment file:
+
+```bash
 cp .env.example .env
+```
 
+Generate the application key:
+
+```bash
 php artisan key:generate
 ```
 
-Configure the database in `.env`, then run:
+Configure your database connection in `.env`.
+
+Run the database migrations:
 
 ```bash
 php artisan migrate
 ```
 
+Create the storage symbolic link for uploaded files:
+
+```bash
+php artisan storage:link
+```
+
 ## Development
 
-Start Laravel and Vite together with:
+Start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+In another terminal, start Vite:
 
 ```bash
 npm run dev
 ```
 
+The application will be available at:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Database
+
+The project uses **MySQL** as the primary database and **Eloquent ORM** for database interaction.
+
+Database configuration is stored in the `.env` file.
+
+## Project Structure
+
+```text
+ecommerce/
+├── app/
+├── database/
+├── public/
+├── resources/
+│   └── views/
+├── routes/
+├── storage/
+├── tests/
+├── .env.example
+├── composer.json
+├── package.json
+└── vite.config.js
+```
+
 ## License
 
-This project is for educational purposes.
+This project is developed for educational purposes.
